@@ -7,7 +7,7 @@ In this project, I have created Created Multiple APIs for Login, Logout, Registr
 2) POST CRUD Products
    API Post http://localhost:6000/api/auth/v2/product
    Payload {
-    "productName":"SagarSamui",
+    "productName":"LaxmikantPal",
     "title":"OMG",
     "description":"BSDK",
     "rating":5,
@@ -20,7 +20,7 @@ In this project, I have created Created Multiple APIs for Login, Logout, Registr
 4) Update CRUD Product
    API Put http://localhost:6000/api/auth/v2/product/:id
    Payload {
-    "productName":"SagarSamul",
+    "productName":"LaxmikantPal",
     "title":"OMG",
     "description":"BSDK",
     "rating":5,
@@ -30,9 +30,9 @@ In this project, I have created Created Multiple APIs for Login, Logout, Registr
 5) User Registration
    API Post http://localhost:6000/api/auth/v1/register
    Payload {
-    "name":"Sagar",
+    "name":"Laxmikant",
     "age":"23",
-    "email":"samuisagar4268@gmail.com",
+    "email":"laxmikant.pal34@gmail.com",
     "password":"12345678",
     "cPassword":"12345678",
     "address":"mombai,Maharashtra",
@@ -42,28 +42,17 @@ In this project, I have created Created Multiple APIs for Login, Logout, Registr
 6) User Login
    API Post http://localhost:6000/api/auth/v1/login
    Payload {
-    "name":"Sagar",
-    "email":"sagar.samui@grab.in",
+    "name":"laxmikant",
+    "email":"laxmikant.pal34@gmail.com",
     "password":"12345678"
  }
 
 7) User Logout
    API Get http://localhost:6000/api/auth/v1/logout
-   
-8) Send Email Forgot Password
-   API Post http://localhost:6000/api/auth/v1/forgetpassword  
-   Payload {
-    "email":"samuisagar4268@gmail.com"
- }
 
-9) Verify OTP
-   API Post http://localhost:6000/api/auth/v1/getOtp
-   Payload{
-    "email":"samuisagar4268@gmail.com",
-    "code":"OTP"
-}
 
-10) POST User Product
+
+8) POST User Product
     Only Login User can access this API
     Api Post http://localhost:6000/api/auth/v3/userProduct/:userid
     Payload {
@@ -74,11 +63,11 @@ In this project, I have created Created Multiple APIs for Login, Logout, Registr
     "productDescription":"Its realy a good product"
 }
 
-11) GET One and All User Product
+9) GET One and All User Product
     Only Login User can access this API
     Api Get http://localhost:6000/api/auth/v3/userProduct  
     Api GetOne http://localhost:6000/api/auth/v3/userProduct/:id
     
-12) Delete User Product
+10) Delete User Product
     Only Login User can access this API
     API Del http://localhost:6000/api/auth/v3/userProduct/:id/:userid
